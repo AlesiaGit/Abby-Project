@@ -1,0 +1,248 @@
+.video {
+  position: relative;
+  width: 44.9em;
+  margin-left: 0.125em;
+  height: 21.2em;
+  background: #eeeeee;
+  overflow: hidden;
+  margin-top: 1.5em;
+  margin-bottom: 0.3em;
+}
+@media (max-width: 980px) {
+  .video {
+    width: 100%;
+    background: #313131;
+  }
+}
+.video__player {
+  width: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+}
+.video__player::-webkit-media-controls {
+  display: none !important;
+}
+.video__social-networking--likes {
+  margin-right: 1.5em;
+}
+.video__tag {
+  margin-top: 2.4em;
+}
+.video-controls__big-button {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 4.6875em;
+  height: 3.4375em;
+  background-color: #cd201f;
+  opacity: 0.7;
+  border-radius: 0.9375em;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  outline: none;
+  border: 0;
+}
+.video-controls__big-button:after {
+  position: absolute;
+  content: "";
+  left: 53%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-left: 1.25em solid #ffffff;
+  border-top: 0.75em solid transparent;
+  border-bottom: 0.75em solid transparent;
+}
+.video-controls__big-button:hover {
+  cursor: pointer;
+}
+.video-controls__all-controls-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  bottom: 0.9375em;
+  width: 96%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  outline: none;
+  z-index: 2147483647;
+}
+.video-controls__buttons-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 0.3125em;
+}
+.video-controls__range-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 3.75em;
+  height: 0.9375em;
+  -webkit-transform: translateY(-0.4375em);
+  -ms-transform: translateY(-0.4375em);
+  transform: translateY(-0.4375em);
+}
+.video-controls__main-buttons-wrapper {
+  margin: 0;
+  height: 0.9375em;
+}
+.video-controls__buttons {
+  height: 1.25em;
+  width: 1.5625em;
+  border: 0;
+  color: #eeeeee;
+  border-radius: 0.1875em;
+  outline: none;
+}
+@media (max-width: 980px) {
+  .video-controls__buttons {
+    background-size: 1400% auto;
+  }
+}
+.video-controls__buttons:hover {
+  cursor: pointer;
+}
+.video-controls__buttons--play {
+  background: rgba(0, 0, 0, 0.5) url(../../../img/icons-sprite.png) 14.6em -0.3em;
+}
+@media (max-width: 980px) {
+  .video-controls__buttons--play {
+    background-size: 1400% auto;
+    background-position: 13.6em -0.2em;
+  }
+}
+.video-controls__buttons--pause {
+  background: rgba(0, 0, 0, 0.5) url(../../../img/icons-sprite.png) 11.3em -0.3em;
+  display: none;
+}
+@media (max-width: 980px) {
+  .video-controls__buttons--pause {
+    background-size: 1400% auto;
+    background-position: 32.3em -0.2em;
+  }
+}
+.video-controls__buttons--forward {
+  background: rgba(0, 0, 0, 0.5) url(../../../img/icons-sprite.png) 23.2em -0.3em;
+}
+@media (max-width: 980px) {
+  .video-controls__buttons--forward {
+    background-size: 1400% auto;
+    background-position: 21.4em -0.2em;
+  }
+}
+.video-controls__buttons--mute {
+  background: rgba(0, 0, 0, 0.5) url(../../../img/icons-sprite.png) 8.4em -0.3em;
+  display: none;
+}
+@media (max-width: 980px) {
+  .video-controls__buttons--mute {
+    background-size: 1400% auto;
+    background-position: 7.8em -0.25em;
+  }
+}
+.video-controls__buttons--speaker {
+  background: rgba(0, 0, 0, 0.5) url(../../../img/icons-sprite.png) 4.9em -0.3em;
+}
+@media (max-width: 980px) {
+  .video-controls__buttons--speaker {
+    background-size: 1400% auto;
+    background-position: 4.6em -0.2em;
+  }
+}
+.video-controls__buttons--menu {
+  background: rgba(0, 0, 0, 0.5) url(../../../img/icons-sprite.png) 18.1em -0.3em;
+}
+@media (max-width: 980px) {
+  .video-controls__buttons--menu {
+    background-size: 1400% auto;
+    background-position: 16.75em -0.25em;
+  }
+}
+.video-controls__buttons--settings {
+  background: rgba(0, 0, 0, 0.5) url(../../../img/icons-sprite.png) 19.7em -0.3em;
+}
+@media (max-width: 980px) {
+  .video-controls__buttons--settings {
+    background-size: 1400% auto;
+    background-position: 18.2em -0.25em;
+  }
+}
+.video-controls__buttons--theater {
+  background: rgba(0, 0, 0, 0.5) url(../../../img/icons-sprite.png) 16.3em -0.3em;
+}
+@media (max-width: 980px) {
+  .video-controls__buttons--theater {
+    background-size: 1400% auto;
+    background-position: 15.1em -0.25em;
+  }
+}
+.video-controls__buttons--fullscreen {
+  background: rgba(0, 0, 0, 0.5) url(../../../img/icons-sprite.png) 21.3em -0.3em;
+}
+@media (max-width: 980px) {
+  .video-controls__buttons--fullscreen {
+    background-size: 1400% auto;
+    background-position: 19.7em -0.2em;
+  }
+}
+.video-controls__timer {
+  display: inline-block;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.6875em;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 0.1875em;
+  margin-left: 0.375em;
+  vertical-align: top;
+}
+.video-controls__volume-bar {
+  position: relative;
+  -webkit-appearance: none;
+  margin-top: 0.3125em;
+}
+.video-controls__volume-bar:focus {
+  outline: none;
+}
+.video-controls__volume-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 0.125em;
+  width: 0.25em;
+  background: red;
+  cursor: pointer;
+}
+.video-controls__volume-bar::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 0.125em;
+  cursor: pointer;
+  background: #ffffff;
+  border: none;
+}
+.video-controls__progress-bar {
+  position: relative;
+  -webkit-appearance: none;
+  height: 0.125em;
+  width: 100%;
+  background-color: #ffffff;
+  margin: 0;
+}
+.video-controls__played-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.125em;
+  width: 0.125em;
+  background-color: red;
+  margin: 0;
+}

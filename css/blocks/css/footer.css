@@ -1,0 +1,116 @@
+.footer {
+  background-color: #000000;
+  height: 5.375em;
+  margin-top: -5.375em;
+  width: 100%;
+}
+.footer__container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 57.29%;
+  height: 100%;
+  margin: 0 auto;
+  color: #ffffff;
+  white-space: nowrap;
+  font-size: 0.875em;
+}
+@media (max-width: 1280px) {
+  .footer__container {
+    font-size: 1.24vw;
+    width: 100%;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 980px) {
+  .footer__container {
+    font-size: 1.72vw;
+  }
+}
+@media (max-width: 650px) {
+  .footer__container {
+    font-size: 2.15vw;
+  }
+}
+.footer__copywrite {
+  text-align: center;
+  margin-left: 1.2em;
+  margin-top: 0.1875em;
+}
+.footer__icons-block {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 0;
+  margin-top: 0.1em;
+  margin-right: 1.2em;
+}
+.footer__icon-style {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  margin-left: 0.18em;
+}
+.footer__up {
+  margin-right: 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: -0.1875em;
+  font-size: 1.4em;
+}
+@media (max-width: 1280px) {
+  .footer__up {
+    font-size: 1.77vw;
+  }
+}
+@media (max-width: 980px) {
+  .footer__up {
+    font-size: 2.45vw;
+  }
+}
+@media (max-width: 650px) {
+  .footer__up {
+    font-size: 3.08vw;
+  }
+}
+.footer__up-icon {
+  color: #c9a245;
+  margin-left: 0.4em;
+  font-size: 1.1em;
+}
+@media (max-width: 1280px) {
+  .footer__up-icon {
+    font-size: 2.12vw;
+    width: 100%;
+  }
+}
+@media (max-width: 980px) {
+  .footer__up-icon {
+    font-size: 2.94vw;
+  }
+}
+@media (max-width: 650px) {
+  .footer__up-icon {
+    font-size: 3.69vw;
+  }
+}
+.footer__up-icon:hover {
+  color: #c9a245;
+}
+.footer__up-icon:visited {
+  color: #c9a245;
+}

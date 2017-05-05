@@ -1,0 +1,132 @@
+@import url("../../_base/less/less-variables.less");
+
+.calendar {
+    padding-bottom: 1.4em;
+    margin-bottom: 1.6em;
+
+    .tablet ({
+        margin-bottom: 0.25em;
+        });
+    
+    &__wrapper {
+        width: 92%;
+        padding-top: 1.6em;
+        margin: 0 auto;
+
+        .tablet ({
+            width: 50%;
+            });
+
+        .mobile ({
+            width: 84%;
+            });
+    }
+
+    &__title {
+        margin-top: 0.66em;
+        margin-bottom: 0.6em;
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 98%;
+        padding-bottom: 3*@em;
+    }
+
+    &__month {
+        font-family: "Lato-Light", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 3.6*@em;
+        font-weight: 600;
+        .font-size-desktop(12);
+
+        .laptop ({
+            .font-size-laptop(12);
+            });
+        
+        .tablet ({
+            .font-size-tablet(16);
+            });
+        
+        .mobile ({
+            .font-size-mobile(22);
+            });
+    }
+
+    &__control {
+        display: inline-block;
+        border: none;
+        margin: 0;
+        height: 20*@em;
+        width: 20*@em;
+        padding-top: 0.2em;
+        text-decoration: none;
+        outline: none;
+        cursor: pointer;
+        background: none;
+        color: #000000;
+        font-weight: bold;
+        .font-size-desktop(24);
+
+        .laptop ({
+            .font-size-laptop(24);
+            });
+        
+        .tablet ({
+            .font-size-tablet(24);
+            });
+        
+        .mobile ({
+            .font-size-mobile(24);
+            });
+    }
+
+    &__style {
+        width: 100%;
+        padding-top: 1.5em;
+    }
+
+    &__table {
+        display: table;
+        width: 100%;
+        height: 11.2em;
+        margin: 0 auto;
+    }
+
+    &__row {
+        display: table-row;
+    }
+
+    &__cell {
+        display: table-cell;
+        width: (100%)/7;
+        text-align: center;
+        border: 0.5em solid #ffffff;
+        vertical-align: middle;
+        font-family: "OpenSans-Italic", sans-serif;
+        color: #000000;
+        .font-size-desktop(12);
+
+        .laptop ({
+            .font-size-laptop(12);
+            });
+        
+        .tablet ({
+            .font-size-tablet(16);
+            padding-top: 1em;
+            padding-bottom: 1em;
+            });
+        
+        .mobile ({
+            .font-size-mobile(20);
+            padding-top: 1em;
+            padding-bottom: 1em;
+            });
+    
+        &:hover {
+            background-color: #c9a245;
+        }
+    }
+}

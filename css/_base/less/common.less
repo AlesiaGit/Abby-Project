@@ -1,0 +1,192 @@
+// IMPORT LESS VARIABLES DEFINITIONS
+@import url("../less/less-variables.less");
+
+// CSS COMMON RULES
+html {
+  font-size: 16px;
+  height: 100%;
+}
+body {
+  height: 100%;
+  width: 1920px;
+  max-width: 100%;
+  font-family: "Lato-Light", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  .font-size-desktop(16);
+
+  .laptop ({
+    .font-size-laptop(16);
+    width: @laptop-area;
+    });
+  
+  .tablet ({
+    .font-size-tablet(16);
+    width: @tablet-area;
+    });
+  
+  .mobile ({
+    .font-size-mobile(16);
+    width: @mobile-area;
+    });
+}
+
+.page {
+  &__wrapper {
+    height: 100%;
+  }
+
+  &__content {
+    min-height: 100%;
+
+    &:after {
+      content: '';
+      display: block;
+      height: 86*@em;
+    }
+  }
+}
+
+// ---------------------------------------------------------
+// FOR PIXEL PERFECT PURPOSES ONLY
+// ---------------------------------------------------------
+
+.pixel-perfect {
+  position: absolute;
+  width: 1920px;
+  opacity: 0.5;
+  top:0;
+  margin: 0 auto;
+}
+body::-webkit-scrollbar {
+  display: none !important;
+}
+
+// ---------------------------------------------------------
+// ---------------------------------------------------------
+
+
+p {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.icons-block {
+  display: flex;
+  align-self: flex-end;
+  padding-bottom: 12*@em;
+  
+  &__elem-style {
+    color: #ffffff;
+    margin-right: 0.55em;
+    transform: scale(0.9);
+
+    &:last-child {
+      margin-right: 0.8em;
+    }
+
+    &:hover {
+      color: #c8a145;
+    }
+  }   
+}
+.read-more {
+  text-align: center;
+  width: inherit;
+
+  &__link-style {
+    font-family: "Lato-Light", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 12*@em 30*@em;
+    border: 2*@em solid #c9a245;
+    .font-size-desktop(18);
+    
+    .laptop ({
+      .font-size-laptop(18);
+      });
+
+    .tablet ({
+      .font-size-tablet(18);
+      });
+
+    .mobile ({
+      .font-size-mobile(18);
+      });
+  }
+  
+  &__link-style:hover {
+    border: 1*@em solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+.tag {
+  text-align: center;
+  font-family: "Lato-Light", sans-serif;
+  text-transform: uppercase;
+  padding: 12*@em 19*@em;
+  .font-size-desktop(18);
+  
+  .laptop ({
+    .font-size-laptop(18);
+    });
+
+  .tablet ({
+    .font-size-tablet(18);
+    });
+
+  .mobile ({
+    .font-size-mobile(18);
+    });
+}
+.post {
+  width: 100%;
+  background-color: #ffffff;
+  margin-bottom: 20*@em;
+  padding-bottom: 20*@em;
+  box-sizing: border-box;
+  
+  .mobile ({
+    .content-block,
+    .aside__content-block {
+      margin-bottom: 2*@em;
+    }
+  });
+}
+.divider {
+  border-bottom: 2*@em solid #c9a245;
+  margin: 8*@em auto;
+  width: 33.5*@em;
+}
+
+.horizontal-center {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.post-title {
+  text-align: center;
+  font-family: "PlayfairDisplay-Regular", serif;
+  color: #000000;
+  .font-size-desktop(43.84);
+  
+  .laptop ({
+    .font-size-laptop(44);
+    });
+
+  .tablet ({
+    .font-size-tablet(44);
+    });
+
+  .mobile ({
+    .font-size-mobile(44);
+    });
+}
+

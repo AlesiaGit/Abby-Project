@@ -1,0 +1,160 @@
+@import url("../../_base/less/less-variables.less");
+
+.header {
+	background-color: #ffffff;
+	background-image: linear-gradient(to bottom, #000000 60*@em, transparent 60*@em);
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		width: 70em;
+		margin: 0 auto;
+
+		.laptop ({
+			width: @laptop-area;
+			});
+	}
+
+	&__elements {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin: 0;
+		height: 60*@em;
+	}
+
+	&__navigation {
+		align-self: flex-end;
+		margin-left: 1.45em;
+
+		.tablet ({
+			padding-bottom: 5*@em;
+			margin: 0;
+			});
+	}
+
+	&__sub-navigation {
+		display: inherit;
+		margin-right: 0.5em;
+
+		.laptop ({
+			margin-right: 0;
+			});
+	}
+
+	&__icons-block {
+		padding-bottom: 0.7em;
+	}
+}
+
+.home-icon {
+	display: none;
+
+	&__elem-style {
+		font-size: 32*@em;
+		text-indent: 15*@em;
+		color: #ffffff;
+		&:visited,
+		&:hover  {
+			color: #ffffff;
+		}
+	}
+
+	.tablet ({ 
+		display: block;
+		});
+}
+
+.pages-list {
+	padding-bottom: 0.8em;
+
+	&__elem-style {
+		margin-right: 1.43em;
+		color: #ffffff;
+		text-transform: uppercase;
+		text-decoration: none;
+
+		&:hover, 
+		&:active {
+			color: #c68e65;
+			text-decoration: none;
+		}
+	}
+	
+	.tablet ({
+		display: none;
+
+		&:hover {
+			display: block;
+		}
+
+		.home-icon:hover + & {
+			position: absolute;
+			display: block;
+			top: 60*@em;
+			left: 0;
+			width: 100%;
+			text-indent: 7*@em;
+			background-color: #000000;
+			z-index: 3;
+		}
+
+		&__elem-style {
+			display: block;
+			margin: 20*@em;
+		}
+		});
+
+	&__search {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		height: 60*@em;
+		margin: 0;
+	}
+}
+
+.search-block {
+	position: relative;
+	height: 100%;
+	width: 3.5em;
+	background-color: #ffffff;
+	border: none;
+	outline: none;
+	text-indent: 20*@em;
+	font-family: "FontAwesome";
+	font-size: 14*@em;
+	transition: width 0.4s ease-in-out;
+
+	&:focus {
+		width: 200*@em;
+	}
+
+	&::-webkit-input-placeholder {
+		color: #000000; /* Chrome/Opera/Safari */
+	}
+
+	&::-moz-placeholder { /* Firefox 19+ */
+		color: #000000;
+	}
+	&:-ms-input-placeholder { /* IE 10+ */
+		color: #000000;
+	}
+	
+	.tablet ({
+		&:focus {
+			width: 150*@em;
+		}
+		});
+}
+
+.logo-img {
+	padding-top: 2.77em;
+	padding-bottom: 3.3em;
+
+	&__elem-style {
+		display: block;
+		margin: 0 auto;
+	}
+}

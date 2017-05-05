@@ -1,0 +1,224 @@
+.featured__container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+@media (max-width: 980px) {
+  .featured__container {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .featured__container {
+    display: none;
+  }
+}
+.featured__container-mobile {
+  width: 100%;
+  display: none;
+}
+@media (max-width: 980px) {
+  .featured__container-mobile {
+    display: block;
+  }
+}
+@media (max-width: 650px) {
+  .featured__container-mobile {
+    display: block;
+  }
+}
+.featured__mobile-image {
+  width: 100%;
+}
+.image-block {
+  position: relative;
+  line-height: 0;
+}
+.image-block:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #aaaeb5;
+  opacity: 0;
+}
+.image-block:hover::after {
+  opacity: 0.2;
+  transition: all 0.5s ease-in-out;
+}
+.image-block__read-more {
+  display: none;
+}
+.image-block:hover .image-block__read-more {
+  display: block;
+}
+.image-block__overlay {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 19%;
+  left: 19%;
+  line-height: normal;
+  z-index: 1;
+}
+.image-block__overlay-tag {
+  padding: 0;
+  background: none;
+  color: #ffffff;
+}
+@media (max-width: 1280px) {
+  .image-block__overlay-tag {
+    font-size: 1.06vw;
+    padding: 0.625em 1.1875em;
+  }
+}
+@media (max-width: 1500px) {
+  .image-block__overlay-tag {
+    font-size: 0.97vw;
+    padding: 0.5em 1em;
+  }
+}
+@media (max-width: 980px) {
+  .image-block__overlay-tag {
+    font-size: 2.21vw;
+  }
+}
+.image-block__overlay-title {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "PlayfairDisplay-Regular", serif;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 1.25em;
+  font-size: 3.125em;
+}
+@media (max-width: 1700px) {
+  .image-block__overlay-title {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 1280px) {
+  .image-block__overlay-title {
+    font-size: 2.83vw;
+    margin-bottom: 0.625em;
+  }
+}
+@media (max-width: 1500px) {
+  .image-block__overlay-title {
+    font-size: 2.48vw;
+    margin-bottom: 0.3125em;
+  }
+}
+@media (max-width: 980px) {
+  .image-block__overlay-title {
+    font-size: 5.89vw;
+    margin-bottom: 0.625em;
+  }
+}
+@media (max-width: 650px) {
+  .image-block__overlay-title {
+    font-size: 6.15vw;
+    margin-bottom: 0.625em;
+  }
+}
+@media (max-width: 1280px) {
+  .image-block__overlay-link {
+    font-size: 1.06vw;
+    padding: 0.625em 1.1875em;
+  }
+}
+@media (max-width: 1500px) {
+  .image-block__overlay-link {
+    font-size: 0.97vw;
+    padding: 0.5em 1em;
+  }
+}
+@media (max-width: 980px) {
+  .image-block__overlay-link {
+    font-size: 2.21vw;
+  }
+}
+.carousel__control {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-1em);
+  -ms-transform: translateY(-1em);
+  transform: translateY(-1em);
+  bottom: 0;
+  width: 15%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 2em;
+}
+@media (max-width: 1280px) {
+  .carousel__control {
+    font-size: 2.83vw;
+  }
+}
+@media (max-width: 980px) {
+  .carousel__control {
+    font-size: 3.93vw;
+  }
+}
+@media (max-width: 650px) {
+  .carousel__control {
+    font-size: 4.92vw;
+  }
+}
+.carousel__control-left {
+  right: auto;
+  left: 0;
+}
+.carousel__control-right {
+  right: 0;
+  left: auto;
+}
+.carousel__control:hover {
+  color: #ffffff;
+}
+.carousel__control:visited {
+  color: #ffffff;
+}
+.carousel__indicators {
+  position: absolute;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  list-style: none;
+}
+.carousel__indicators li {
+  display: block;
+  height: 0.3125em;
+  width: 33%;
+  text-indent: -62.4375em;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 0;
+  margin: 0;
+}
+.carousel__indicators .active {
+  display: inline-block;
+  width: 34%;
+  height: 0.3125em;
+  margin: 0;
+  background-color: #c68e65;
+}

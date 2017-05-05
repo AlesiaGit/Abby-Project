@@ -349,10 +349,10 @@
 }
 .contact-form__field-textarea-cover {
   position: absolute;
-  top: 0.0625em;
-  left: 0.0625em;
-  bottom: 0.0625em;
-  right: 0.0625em;
+  top: 0.1em;
+  left: 0.1em;
+  bottom: 0.1em;
+  right: 0.1em;
   background-color: #ffffff;
   z-index: 1;
   -webkit-animation: type 10s infinite;

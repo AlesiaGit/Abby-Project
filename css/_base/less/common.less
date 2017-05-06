@@ -81,16 +81,12 @@ img {
   padding-bottom: 12*@em;
   
   &__elem-style {
-    color: #ffffff;
     margin-right: 0.55em;
     transform: scale(0.9);
+    text-decoration: none;
 
     &:last-child {
       margin-right: 0.8em;
-    }
-
-    &:hover {
-      color: #c8a145;
     }
   }   
 }
@@ -101,9 +97,7 @@ img {
   &__link-style {
     font-family: "Lato-Light", sans-serif;
     text-transform: uppercase;
-    text-decoration: none;
     cursor: pointer;
-    color: #ffffff;
     padding: 12*@em 30*@em;
     border: 2*@em solid #c9a245;
     .font-size-desktop(18);
@@ -119,6 +113,18 @@ img {
     .mobile ({
       .font-size-mobile(18);
       });
+
+    &:link,
+    &:visited {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    &:hover, 
+    &:active {
+      color: #c68e65;
+      text-decoration: none;
+    }
   }
   
   &__link-style:hover {

@@ -184,11 +184,13 @@
   right: 0;
   left: auto;
 }
-.carousel__control:hover {
+.carousel__control:link,
+.carousel__control:visited,
+.carousel__control:hover,
+.carousel__control:active {
   color: #ffffff;
-}
-.carousel__control:visited {
-  color: #ffffff;
+  text-decoration: none;
+  outline: none;
 }
 .carousel__indicators {
   position: absolute;

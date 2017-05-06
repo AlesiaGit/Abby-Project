@@ -69,17 +69,14 @@ img {
   padding-bottom: 0.75em;
 }
 .icons-block__elem-style {
-  color: #ffffff;
   margin-right: 0.55em;
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
+  text-decoration: none;
 }
 .icons-block__elem-style:last-child {
   margin-right: 0.8em;
-}
-.icons-block__elem-style:hover {
-  color: #c8a145;
 }
 .read-more {
   text-align: center;
@@ -88,9 +85,7 @@ img {
 .read-more__link-style {
   font-family: "Lato-Light", sans-serif;
   text-transform: uppercase;
-  text-decoration: none;
   cursor: pointer;
-  color: #ffffff;
   padding: 0.75em 1.875em;
   border: 0.125em solid #c9a245;
   font-size: 1.125em;
@@ -109,6 +104,16 @@ img {
   .read-more__link-style {
     font-size: 2.77vw;
   }
+}
+.read-more__link-style:link,
+.read-more__link-style:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.read-more__link-style:hover,
+.read-more__link-style:active {
+  color: #c68e65;
+  text-decoration: none;
 }
 .read-more__link-style:hover {
   border: 0.0625em solid #ffffff;

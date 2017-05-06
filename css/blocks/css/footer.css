@@ -65,6 +65,14 @@
   transform: scale(1.2);
   margin-left: 0.18em;
 }
+.footer__icon-style:link,
+.footer__icon-style:visited {
+  color: #ffffff;
+}
+.footer__icon-style:hover,
+.footer__icon-style:active {
+  color: #c68e65;
+}
 .footer__up {
   margin-right: 0.5em;
   text-align: center;

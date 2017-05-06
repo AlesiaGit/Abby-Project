@@ -172,9 +172,6 @@
   margin-left: -0.625em;
 }
 .post__read-more-link {
-  color: #000000;
-  border: 0.125em solid #000000;
-  text-decoration: none;
   padding: 0.6875em 1.6em;
   font-size: 0.875em;
 }
@@ -193,7 +190,14 @@
     font-size: 2.15vw;
   }
 }
-.post__read-more-link:hover {
+.post__read-more-link:link,
+.post__read-more-link:visited {
+  color: #000000;
+  text-decoration: none;
+  border: 0.125em solid #000000;
+}
+.post__read-more-link:hover,
+.post__read-more-link:active {
   color: #c9a245;
   border: 0.125em solid #c9a245;
   text-decoration: none;
@@ -318,12 +322,14 @@
   padding: 0.72em 1.35em;
   font-size: 1.25em;
 }
-.older-posts__read-more-link:hover {
+.older-posts__read-more-link:link,
+.older-posts__read-more-link:visited {
   color: #c68e65;
   border: 0.0625em solid #cdcdcd;
 }
-.older-posts__read-more-link:visited {
-  color: #c68e65;
+.older-posts__read-more-link:hover,
+.older-posts__read-more-link:active {
+  color: #cdcdcd;
   border: 0.0625em solid #cdcdcd;
 }
 .instagram {

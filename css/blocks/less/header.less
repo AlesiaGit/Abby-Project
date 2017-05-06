@@ -45,6 +45,18 @@
 	&__icons-block {
 		padding-bottom: 0.7em;
 	}
+
+	&__icon-style {
+		&:link,
+		&:visited {
+			color: #ffffff;
+		}
+
+		&:hover,
+		&:active {
+			color: #c68e65;
+		}
+	}
 }
 
 .home-icon {
@@ -53,10 +65,15 @@
 	&__elem-style {
 		font-size: 32*@em;
 		text-indent: 15*@em;
-		color: #ffffff;
-		&:visited,
-		&:hover  {
+		
+		&:link,
+		&:visited {
 			color: #ffffff;
+		}
+
+		&:hover,
+		&:active {
+			color: #c68e65;
 		}
 	}
 
@@ -68,11 +85,15 @@
 .pages-list {
 	padding-bottom: 0.8em;
 
-	&__elem-style {
+	&__elem-style  {
 		margin-right: 1.43em;
-		color: #ffffff;
 		text-transform: uppercase;
-		text-decoration: none;
+		
+		&:link,
+		&:visited {
+			color: #ffffff;
+			text-decoration: none;
+		}
 
 		&:hover, 
 		&:active {

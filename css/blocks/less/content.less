@@ -1,6 +1,5 @@
 @import url("../../_base/less/less-variables.less");
 
-
 .content {
 	background-color: #f5f5f5;
 	
@@ -164,9 +163,6 @@
 		margin-left: -10*@em;
 
 		&-link {
-			color: #000000;
-			border: 2*@em solid #000000;
-			text-decoration: none;
 			padding: 11*@em 1.6em;
 			.font-size-desktop(14);
 
@@ -182,7 +178,15 @@
 				.font-size-mobile(14);
 				});
 
-			&:hover {
+			&:link,
+			&:visited {
+				color: #000000;
+				text-decoration: none;
+				border: 2*@em solid #000000;
+			}
+
+			&:hover, 
+			&:active {
 				color: #c9a245;
 				border: 2*@em solid #c9a245;
 				text-decoration: none;
@@ -301,14 +305,18 @@
 			border: 1*@em solid #cdcdcd;
 			padding: 0.72em 1.35em;
 			font-size: 1.25em;
-		}
-		&-link:hover {
-			color: #c68e65;
-			border: 1*@em solid #cdcdcd;
-		}
-		&-link:visited {
-			color: #c68e65;
-			border: 1*@em solid #cdcdcd;
+
+			&:link,
+			&:visited {
+				color: #c68e65;
+				border: 1*@em solid #cdcdcd;
+			}
+
+			&:hover, 
+			&:active {
+				color: #cdcdcd;
+				border: 1*@em solid #cdcdcd;
+			}
 		}
 	}
 }

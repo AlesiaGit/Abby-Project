@@ -93,15 +93,15 @@ window.onload = function() {
 
 
 	muteButton.addEventListener("click", function() {
-		myVideo.muted == true;
-		speaker.style.display = "inline-block";
-		mute.style.display = "none";
+		myVideo.muted = true;
+		speakerButton.style.display = "inline-block";
+		muteButton.style.display = "none";
 	});
 
 	speakerButton.addEventListener("click", function() {
-		myVideo.muted == false;
-		speaker.style.display = "none";
-		mute.style.display = "inline-block";
+		myVideo.muted = false;
+		speakerButton.style.display = "none";
+		muteButton.style.display = "inline-block";
 	});
 
 
@@ -120,12 +120,9 @@ window.onload = function() {
 	var audioPlayedBar = document.getElementById("audio-played-bar");
 	var audioSlider = document.getElementById("audio-slider");
 	var audioProgressBar = document.getElementById("audio-progress-bar");
-	var audioVolumeBar = document.getElementById("audio-volume-bar");
-	var audioCurrentTime = document.getElementById("audio-current-time");
-	var audioDuration = document.getElementById("audio-duration");
-	
+		
 	audioPlayButton.addEventListener("click", function() {
-		if (myAudio.paused == true ) {
+		if (myAudio.paused === true ) {
 			myAudio.play();
 			audioPlayButton.style.backgroundImage = "url(img/icons/pause.png)";
 		} else {
@@ -158,7 +155,7 @@ window.onload = function() {
 	});
 
 	audioMuteButton.addEventListener("click", function() {
-		if (myAudio.muted == false) {
+		if (myAudio.muted === false) {
 			myAudio.muted = true;
 			audioMuteButton.style.backgroundImage = "url(img/icons/mute.png)";
 		} else {
@@ -200,8 +197,8 @@ window.onload = function() {
         	d.setDate(d.getDate() + 1);
 		}
 
-		if (getDay(d) != 0) {
-			for (var i = getDay(d); i < 7; i++) {
+		if (getDay(d) !== 0) {
+			for (; i < 7; i++) {
 				table += '<div class="calendar__cell"> </div>';
 			}
 		}
@@ -212,7 +209,7 @@ window.onload = function() {
     
 		function getDay(date) { // weekdays Monday (0) to Sunday (6)
 		var weekDay = date.getDay();
-			if (weekDay == 0) weekDay = 7;
+			if (weekDay === 0) weekDay = 7;
 			return weekDay - 1;
 		}
 
@@ -247,7 +244,7 @@ window.onload = function() {
 
 		for (var i = 1; i <= 12; i++) {
 			table += '<div class="tags__cell">' + tagsArray[Math.floor(Math.random()*x)] + '</div>';
-			if (i%4 == 0 && i != 12) {
+			if (i%4 === 0 && i != 12) {
 				table += '</div><div class="tags__column">';
 			}
 			if (i==12) {
@@ -261,5 +258,3 @@ window.onload = function() {
 	
 
 };
-
-

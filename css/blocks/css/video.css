@@ -117,7 +117,7 @@
 .video-controls__buttons--play {
   background: rgba(0, 0, 0, 0.5) url(../../../img/icons-sprite.png) 14.6em -0.3em;
 }
-@media (max-width: 980px) {
+@media (max-width: 1280px) {
   .video-controls__buttons--play {
     background-size: 1400% auto;
     background-position: 13.6em -0.2em;
@@ -127,7 +127,7 @@
   background: rgba(0, 0, 0, 0.5) url(../../../img/icons-sprite.png) 11.3em -0.3em;
   display: none;
 }
-@media (max-width: 980px) {
+@media (max-width: 1280px) {
   .video-controls__buttons--pause {
     background-size: 1400% auto;
     background-position: 32.3em -0.2em;
@@ -136,7 +136,7 @@
 .video-controls__buttons--forward {
   background: rgba(0, 0, 0, 0.5) url(../../../img/icons-sprite.png) 23.2em -0.3em;
 }
-@media (max-width: 980px) {
+@media (max-width: 1280px) {
   .video-controls__buttons--forward {
     background-size: 1400% auto;
     background-position: 21.4em -0.2em;
@@ -146,7 +146,7 @@
   background: rgba(0, 0, 0, 0.5) url(../../../img/icons-sprite.png) 8.4em -0.3em;
   display: none;
 }
-@media (max-width: 980px) {
+@media (max-width: 1280px) {
   .video-controls__buttons--mute {
     background-size: 1400% auto;
     background-position: 7.8em -0.25em;
@@ -155,7 +155,7 @@
 .video-controls__buttons--speaker {
   background: rgba(0, 0, 0, 0.5) url(../../../img/icons-sprite.png) 4.9em -0.3em;
 }
-@media (max-width: 980px) {
+@media (max-width: 1280px) {
   .video-controls__buttons--speaker {
     background-size: 1400% auto;
     background-position: 4.6em -0.2em;
@@ -164,7 +164,7 @@
 .video-controls__buttons--menu {
   background: rgba(0, 0, 0, 0.5) url(../../../img/icons-sprite.png) 18.1em -0.3em;
 }
-@media (max-width: 980px) {
+@media (max-width: 1280px) {
   .video-controls__buttons--menu {
     background-size: 1400% auto;
     background-position: 16.75em -0.25em;
@@ -173,7 +173,7 @@
 .video-controls__buttons--settings {
   background: rgba(0, 0, 0, 0.5) url(../../../img/icons-sprite.png) 19.7em -0.3em;
 }
-@media (max-width: 980px) {
+@media (max-width: 1280px) {
   .video-controls__buttons--settings {
     background-size: 1400% auto;
     background-position: 18.2em -0.25em;
@@ -182,7 +182,7 @@
 .video-controls__buttons--theater {
   background: rgba(0, 0, 0, 0.5) url(../../../img/icons-sprite.png) 16.3em -0.3em;
 }
-@media (max-width: 980px) {
+@media (max-width: 1280px) {
   .video-controls__buttons--theater {
     background-size: 1400% auto;
     background-position: 15.1em -0.25em;
@@ -191,7 +191,7 @@
 .video-controls__buttons--fullscreen {
   background: rgba(0, 0, 0, 0.5) url(../../../img/icons-sprite.png) 21.3em -0.3em;
 }
-@media (max-width: 980px) {
+@media (max-width: 1280px) {
   .video-controls__buttons--fullscreen {
     background-size: 1400% auto;
     background-position: 19.7em -0.2em;

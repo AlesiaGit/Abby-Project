@@ -64,7 +64,7 @@ gulp.task('html:build', function () {
 
 gulp.task('js:build', function () {
     gulp.src(path.src.js) 
-     .pipe(concat('main.js'))
+     //.pipe(concat('main.js'))
      .pipe(babel())
     .pipe(gulp.dest(path.build.js)) 
     .pipe(reload({stream: true})); 

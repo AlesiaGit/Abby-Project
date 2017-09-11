@@ -22,30 +22,6 @@
   font-style: normal;
 }
 
-/*@font-face {
-  font-family: "Lato-LightItalic";
-  src: url("../../../fonts/Lato-LightItalic/Lato-LightItalic.eot");
-  src: url("../../../fonts/Lato-LightItalic/Lato-LightItalic.woff2") format("woff2"),
-       url("../../../fonts/Lato-LightItalic/Lato-LightItalic.woff") format("woff"),
-       url("../../../fonts/Lato-LightItalic/Lato-LightItalic.ttf") format("truetype"),
-       url("../../../fonts/Lato-LightItalic/Lato-LightItalic.svg#Lato-LightItalic") format("svg"),
-       url("../../../fonts/Lato-LightItalic/Lato-LightItalic.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal;
-}*/
-
-/*@font-face {
-  font-family: "PlayfairDisplay-BoldItalic";
-  src: url("../../../fonts/PlayfairDisplay-BoldItalic.eot");
-  src: url("../../../fonts/PlayfairDisplay-BoldItalic.woff2") format("woff2"),
-       url("../../../fonts/PlayfairDisplay-BoldItalic.woff") format("woff"),
-       url("../../../fonts/PlayfairDisplay-BoldItalic.ttf") format("truetype"),
-       url("../../../fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic") format("svg"),
-       url("../../../fonts/PlayfairDisplay-BoldItalic.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal;
-}*/
-
 @font-face {
   font-family: "PlayfairDisplay-Italic";
   src: url("../../../fonts/PlayfairDisplay-Italic/PlayfairDisplay-Italic.eot");

@@ -104,7 +104,7 @@
   .pages-list:hover {
     display: block;
   }
-  .home-icon:hover + .pages-list {
+  .navigation:hover > .pages-list {
     position: absolute;
     display: block;
     top: 3.75em;

@@ -1,0 +1,18 @@
+/*Common styles*/
+@import url("_base/css/fonts.css");
+@import url("_base/css/common.css");
+
+/*Block styles*/
+@import url("blocks/css/header.css");
+@import url("blocks/css/featured.css");
+@import url("blocks/css/content.css");
+@import url("blocks/css/video.css");
+@import url("blocks/css/audio.css");
+@import url("blocks/css/calendar.css");
+@import url("blocks/css/aside.css");
+@import url("blocks/css/footer.css");
+
+/*Pages styles*/
+@import url("blocks/css/blog.css");
+
+
